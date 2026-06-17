@@ -4,17 +4,17 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB; 
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\ConsultationsController;
+use App\Http\Controllers\ConsultationsController; 
 
 // ====================================================
 // 1. روابط تسجيل الدخول والإنشاء (المتاحة للجميع بدون حماية)
 // ====================================================
-
 Route::get('/register', [RegisterController::class, 'showRegisterForm']);
 Route::post('/register', [RegisterController::class, 'register']);
 
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 
