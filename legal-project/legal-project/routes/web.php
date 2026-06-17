@@ -9,6 +9,7 @@ use App\Http\Controllers\ConsultationsController;
 // ====================================================
 // 1. روابط تسجيل الدخول والإنشاء (المتاحة للجميع بدون حماية)
 // ====================================================
+
 Route::get('/register', [RegisterController::class, 'showRegisterForm']);
 Route::post('/register', [RegisterController::class, 'register']);
 
