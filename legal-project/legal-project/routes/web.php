@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB; 
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\ConsultationsController; 
+use App\Http\Controllers\ConsultationsController;
 
 // ====================================================
 // 1. روابط تسجيل الدخول والإنشاء (المتاحة للجميع بدون حماية)
